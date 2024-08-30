@@ -6,7 +6,7 @@ let reaction
 
 function start(){
     if(currentIndex < lights.length){
-        lights[currentIndex].style.backgroundImage = 'url(lightOn.jpg';
+        lights[currentIndex].style.backgroundImage = 'url("lightOn.jpg")';
         currentIndex++;
         setTimeout(start, 1000);
     }
