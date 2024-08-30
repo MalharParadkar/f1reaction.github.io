@@ -6,7 +6,7 @@ let reaction
 
 function start(){
     if(currentIndex < lights.length){
-        lights[currentIndex].style.backgroundImage = 'url(./Assets/Images/lightOn.jpg';
+        lights[currentIndex].style.backgroundImage = 'url(lightOn.jpg';
         currentIndex++;
         setTimeout(start, 1000);
     }
@@ -16,12 +16,12 @@ function start(){
 function react(){
     let reactButton = document.getElementById('react');
     let lastLight = document.getElementById('light5');
-    if(lastLight.style.backgroundImage == 'url("./Assets/Images/lightOn.jpg")'){
+    if(lastLight.style.backgroundImage == 'url("lightOn.jpg")'){
         setTimeout(start, (Math.random()*500)+500);
         let allLights = document.querySelectorAll('.light');
         
         for(let i = 0; i < allLights.length; i++){
-            allLights[i].style.backgroundImage = 'url("./Assets/Images/lightBg.jpg")';
+            allLights[i].style.backgroundImage = 'url("lightBg.jpg")';
             reactButton.style.display = 'block';
             StartTime = new Date().getTime();
         }
