@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+}
+
+h1{
+    text-align: center;
+    margin: 2rem;
+    font-family:monospace;
+    font-size: 40px;
+    color: white;
+}
+p.text{
+    text-align: center;
+    margin: 2rem;
+    font-family:monospace;
+    font-size: 20px;
+    color: white;
+}
+
+.lights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    width: 100%;
+}
+
+.light{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    background-image: url(./Assets/images/lightBg.jpg);
+    background-size: cover;
+    transition: 0.15s;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    margin: 50px;
+}
+
+#start{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #00E100;
+    color: white;
+    display: block;
+    border: 0;
+}
+
+#reset{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #E1E100;
+    color: black;
+    display: block;
+    border: 0;
+}
+
+#react{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #E10000;
+    color: white;
+    display: none;
+    border: 0;
+}
+
+#start:active{
+    background-color: #00B300;
+}
+
+#reset:active{
+    background-color: #B3B300;
+}
+
+#react:active{
+    background-color: #B30000;
+}
+
+.reaction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reaction p{
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.reaction span{
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
