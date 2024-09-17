@@ -2,7 +2,9 @@ let lights = document.querySelectorAll('.light');
 let currentIndex = 0;
 let StartTime;
 let endTime;
-let reaction
+let reaction;
+let resetButton = document.getElementById('reset-button');
+resetButton.addEventListener('click', reset);
 
 function start(){
     if(currentIndex < lights.length){
@@ -32,4 +34,7 @@ function react(){
         document.getElementById('time').innerHTML = reactionTime+' ms';
         reactButton.style.display = 'none';
     });
+}
+function reset(){
+    location.reload();
 }
